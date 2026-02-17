@@ -1,0 +1,14 @@
+{
+  "name": "12-git-without-fear",
+  "version": "1.0.0",
+  "description": "Version Control, Branching, and Team Workflows",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"No tests configured yet\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

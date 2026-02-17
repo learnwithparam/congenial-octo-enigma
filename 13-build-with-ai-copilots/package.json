@@ -1,0 +1,15 @@
+{
+  "name": "13-build-with-ai-copilots",
+  "version": "1.0.0",
+  "description": "Claude Code, Cursor, and the AI-Assisted Development Workflow",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
