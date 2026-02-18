@@ -2,28 +2,32 @@
   "name": "03-rest-apis-that-dont-suck",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "test": "vitest"
+    "db:seed": "tsx src/db/seed.ts",
+    "test": "NODE_ENV=test vitest run",
+    "test:watch": "NODE_ENV=test vitest",
+    "test:coverage": "NODE_ENV=test vitest run --coverage"
   },
   "dependencies": {
-    "express": "^4.21.0",
     "better-sqlite3": "^11.0.0",
-    "zod": "^3.24.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.0"
+    "dotenv": "^16.4.0",
+    "express": "^4.21.0",
+    "zod": "^3.24.0"
   },
   "devDependencies": {
-    "typescript": "^5.7.0",
-    "tsx": "^4.19.0",
-    "@types/node": "^22.0.0",
-    "@types/express": "^5.0.0",
     "@types/better-sqlite3": "^7.6.0",
     "@types/cors": "^2.8.0",
-    "vitest": "^2.1.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "@types/supertest": "^6.0.0",
     "supertest": "^7.0.0",
-    "@types/supertest": "^6.0.0"
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.2.4"
   }
 }

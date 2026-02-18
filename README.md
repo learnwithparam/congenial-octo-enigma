@@ -12,7 +12,7 @@ Build a real startup directory and discovery platform (think Product Hunt / Trus
 |-------|-------------|
 | **Frontend** | Next.js 15, React, Tailwind CSS v4, TypeScript |
 | **API** | Express, REST, GraphQL (Apollo Server) |
-| **Databases** | SQLite, PostgreSQL (Drizzle ORM), MongoDB (Mongoose) |
+| **Databases** | SQLite, PostgreSQL (Drizzle ORM), MongoDB (Mongodb driver) |
 | **Caching & Queues** | Redis, BullMQ |
 | **Infrastructure** | Docker, Docker Compose, Makefile |
 | **CI/CD** | Git, GitHub Actions |
@@ -37,7 +37,7 @@ Build a real startup directory and discovery platform (think Product Hunt / Trus
 | 04 | [GraphQL From Scratch](./04-graphql-from-scratch/) | 10 | GraphQL API with Apollo Server, DataLoader, subscriptions |
 | 05 | [Connect the Dots](./05-connect-the-dots/) | 8 | Wire frontend to real API, auth flow, optimistic updates |
 | 06 | [Schema Design PostgreSQL](./06-schema-design-postgresql/) | 10 | Production PostgreSQL schema with Drizzle ORM |
-| 07 | [Schema Design MongoDB](./07-schema-design-mongodb/) | 8 | Document database with Mongoose, aggregation pipelines |
+| 07 | [Schema Design MongoDB](./07-schema-design-mongodb/) | 8 | Document database with MongoDB native driver, aggregation pipelines |
 | 08 | [Make It Fast with Caching](./08-make-it-fast-with-caching/) | 8 | Redis caching, rate limiting, performance optimization |
 | 09 | [Background Jobs and Queues](./09-background-jobs-and-queues/) | 8 | BullMQ job queues, email notifications, scheduled jobs |
 | 10 | [Microservices That Make Sense](./10-microservices-that-make-sense/) | 10 | Service extraction, API gateway, distributed logging |

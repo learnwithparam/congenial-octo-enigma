@@ -1,0 +1,42 @@
+[
+  {
+    "name": "SaaS",
+    "slug": "saas",
+    "description": "Software as a Service products and platforms"
+  },
+  {
+    "name": "AI/ML",
+    "slug": "ai-ml",
+    "description": "Artificial intelligence and machine learning tools"
+  },
+  {
+    "name": "Developer Tools",
+    "slug": "developer-tools",
+    "description": "Tools and services that make developers more productive"
+  },
+  {
+    "name": "Fintech",
+    "slug": "fintech",
+    "description": "Financial technology and services"
+  },
+  {
+    "name": "Health",
+    "slug": "health",
+    "description": "Healthcare, wellness, and medical technology"
+  },
+  {
+    "name": "Education",
+    "slug": "education",
+    "description": "Learning platforms and education technology"
+  },
+  {
+    "name": "E-commerce",
+    "slug": "e-commerce",
+    "description": "Online shopping, retail, and marketplace tools"
+  },
+  {
+    "name": "Social",
+    "slug": "social",
+    "description": "Social networking and community platforms"
+  }
+]

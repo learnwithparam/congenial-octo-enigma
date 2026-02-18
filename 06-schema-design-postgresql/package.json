@@ -8,6 +8,7 @@
     "build": "tsc",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx src/migrate.ts",
+    "db:seed": "tsx src/seed.ts",
     "db:studio": "drizzle-kit studio",
     "test": "vitest"
   },
@@ -23,6 +24,6 @@
     "@types/node": "^22.0.0",
     "@types/pg": "^8.11.0",
     "drizzle-kit": "^0.30.0",
-    "vitest": "^2.0.0"
+    "vitest": "^3.0.0"
   }
 }

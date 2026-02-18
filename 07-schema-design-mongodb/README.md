@@ -4,7 +4,7 @@ Document Databases for Flexible, Fast Data.
 
 ## What You'll Learn
 
-How to design effective document schemas with MongoDB -- from understanding when documents beat tables, to modeling with Mongoose, embedding vs referencing, aggregation pipelines, and knowing when to use multiple databases together.
+How to design effective document schemas with MongoDB -- from understanding when documents beat tables, to working with the native MongoDB driver, embedding vs referencing, aggregation pipelines, and knowing when to use multiple databases together.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ How to design effective document schemas with MongoDB -- from understanding when
 |---|--------|-------|
 | 01 | [documents-vs-tables](./lessons/01-documents-vs-tables/) | When to choose documents over relational tables |
 | 02 | [docker-mongo](./lessons/02-docker-mongo/) | Run MongoDB in Docker |
-| 03 | [mongoose-models](./lessons/03-mongoose-models/) | Define schemas and models with Mongoose |
+| 03 | [mongodb-collections](./lessons/03-mongodb-collections/) | Define collections and work with documents using the native driver |
 | 04 | [embedding-referencing](./lessons/04-embedding-referencing/) | Embed nested data vs reference other collections |
 | 05 | [crud-operations](./lessons/05-crud-operations/) | Create, read, update, and delete documents |
 | 06 | [aggregation-pipelines](./lessons/06-aggregation-pipelines/) | Build multi-stage data processing pipelines |

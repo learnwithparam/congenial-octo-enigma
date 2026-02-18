@@ -1,0 +1,8 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/page": "/",
+  "/startups/[slug]/page": "/startups/[slug]",
+  "/submit/page": "/submit",
+  "/categories/page": "/categories",
+  "/startups/page": "/startups"
+}
