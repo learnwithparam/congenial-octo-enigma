@@ -11,7 +11,7 @@ covering CRUD operations, validation, pagination, testing, and documentation.
 
 - JavaScript/TypeScript fundamentals
 - Node.js installed (v18+)
-- Completed Course 02 (Ship Your First Page) or equivalent frontend experience
+- Comfortable with JavaScript/TypeScript and Node.js
 
 ## Lessons
 
@@ -28,11 +28,14 @@ covering CRUD operations, validation, pagination, testing, and documentation.
 | 09 | [automated-tests](./lessons/09-automated-tests/) | Write automated tests with Vitest and Supertest |
 | 10 | [api-documentation](./lessons/10-api-documentation/) | Document your API for consumers |
 
-## Quick Start
+### Quick Start
 
 ```bash
-make setup
-make dev
+make setup    # Install dependencies
+make dev      # Start API at http://localhost:3001
+
+# Or with Docker:
+make docker-up   # Start everything in containers
 ```
 
 ## Commands

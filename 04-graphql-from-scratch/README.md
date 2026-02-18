@@ -11,7 +11,7 @@ covering schema design, resolvers, DataLoaders, subscriptions, and testing.
 
 - JavaScript/TypeScript fundamentals
 - Node.js installed (v18+)
-- Completed Course 03 (REST APIs That Don't Suck) or equivalent API experience
+- Familiar with REST APIs and Express (or equivalent API experience)
 
 ## Lessons
 
@@ -28,11 +28,14 @@ covering schema design, resolvers, DataLoaders, subscriptions, and testing.
 | 09 | [subscriptions](./lessons/09-subscriptions/) | Add real-time subscriptions |
 | 10 | [testing-docs](./lessons/10-testing-docs/) | Test and document your GraphQL API |
 
-## Quick Start
+### Quick Start
 
 ```bash
-make setup
-make dev
+make setup    # Install dependencies
+make dev      # Start Apollo Server at http://localhost:4000
+
+# Or with Docker:
+make docker-up   # Start everything in containers
 ```
 
 ## Commands

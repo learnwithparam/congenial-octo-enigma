@@ -11,7 +11,7 @@ Tailwind CSS v4, and mock data -- from project setup through deployment.
 
 - Basic HTML, CSS, and JavaScript knowledge
 - Node.js installed (v18+)
-- Completed Course 01 (Think in Systems) or equivalent understanding
+- Basic understanding of how web applications work
 
 ## Lessons
 
@@ -30,11 +30,11 @@ Tailwind CSS v4, and mock data -- from project setup through deployment.
 | 11 | [dark-mode-polish](./lessons/11-dark-mode-polish/) | Add dark mode and final visual polish |
 | 12 | [deploy-to-vercel](./lessons/12-deploy-to-vercel/) | Deploy the application to Vercel |
 
-## Quick Start
+### Quick Start
 
 ```bash
-make setup
-make dev
+make setup    # Install dependencies
+make dev      # Start Next.js dev server at http://localhost:3000
 ```
 
 ## Commands

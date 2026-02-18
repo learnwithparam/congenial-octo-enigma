@@ -1,15 +1,4 @@
 services:
-  postgres:
-    image: postgres:16-alpine
-    ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: launchpad
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-
   redis:
     image: redis:7-alpine
     ports:
@@ -17,6 +6,43 @@ services:
     volumes:
       - redisdata:/data
 
+  gateway:
+    build:
+      context: .
+      dockerfile: gateway/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - AUTH_SERVICE_URL=http://auth:3001
+      - NOTIFICATION_SERVICE_URL=http://notifications:3002
+    depends_on:
+      - auth
+      - notifications
+
+  auth:
+    build:
+      context: .
+      dockerfile: auth-service/Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - AUTH_PORT=3001
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+
+  notifications:
+    build:
+      context: .
+      dockerfile: notification-service/Dockerfile
+    ports:
+      - "3002:3002"
+    environment:
+      - NOTIFICATION_PORT=3002
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+
 volumes:
-  pgdata:
   redisdata:

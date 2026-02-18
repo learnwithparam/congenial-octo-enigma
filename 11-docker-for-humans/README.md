@@ -12,6 +12,14 @@ How to containerize applications with Docker, orchestrate multi-service setups w
 - Comfortable with the command line
 - Basic understanding of web servers and databases
 
+### Quick Start
+
+```bash
+make setup       # Install dependencies
+make dev         # Start dev server at http://localhost:3000
+make docker-up   # Or run everything in Docker
+```
+
 ## Lessons
 
 | # | Lesson | Topic |
@@ -26,14 +34,6 @@ How to containerize applications with Docker, orchestrate multi-service setups w
 | 08 | [environment-variables](./lessons/08-environment-variables/) | Managing environment variables in containers |
 | 09 | [makefile-magic](./lessons/09-makefile-magic/) | Makefiles that tame Docker workflows |
 | 10 | [debugging-containers](./lessons/10-debugging-containers/) | Debugging containers when things go wrong |
-
-## Quick Start
-
-```bash
-make setup
-make build
-make up
-```
 
 ## Commands
 

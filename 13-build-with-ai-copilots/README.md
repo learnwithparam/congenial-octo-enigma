@@ -12,6 +12,13 @@ How to use AI coding tools effectively in your development workflow. You will se
 - A text editor or IDE installed
 - An Anthropic API key (for Claude Code)
 
+### Quick Start
+
+```bash
+make setup    # Install dependencies
+make dev      # Start development
+```
+
 ## Lessons
 
 | # | Lesson | Topic |
@@ -24,13 +31,6 @@ How to use AI coding tools effectively in your development workflow. You will se
 | 06 | [refactoring-with-ai](./lessons/06-refactoring-with-ai/) | Refactoring codebases with AI help |
 | 07 | [debugging-with-ai](./lessons/07-debugging-with-ai/) | Debugging tricky issues with AI |
 | 08 | [workflows-and-process](./lessons/08-workflows-and-process/) | Building repeatable AI-assisted workflows |
-
-## Quick Start
-
-```bash
-make setup
-make dev
-```
 
 ## Commands
 

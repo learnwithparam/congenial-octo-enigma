@@ -8,7 +8,7 @@ How to design effective document schemas with MongoDB -- from understanding when
 
 ## Prerequisites
 
-- Completed Course 06 or familiar with database concepts
+- Familiar with basic database concepts (tables, queries, CRUD)
 - Docker installed for running MongoDB locally
 - Node.js 20+ installed
 
@@ -25,12 +25,12 @@ How to design effective document schemas with MongoDB -- from understanding when
 | 07 | [indexes-performance](./lessons/07-indexes-performance/) | Index strategies for fast queries |
 | 08 | [polyglot-persistence](./lessons/08-polyglot-persistence/) | Use the right database for each job |
 
-## Quick Start
+### Quick Start
 
 ```bash
-docker compose up -d   # Start MongoDB
-make setup             # Install deps and create .env
-make dev               # Start the dev server
+make docker-up   # Start MongoDB + API
+make setup       # Install dependencies (if running without Docker)
+make dev         # Start API at http://localhost:3001
 ```
 
 ## Commands

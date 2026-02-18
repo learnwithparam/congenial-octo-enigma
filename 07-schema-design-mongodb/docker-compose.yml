@@ -6,5 +6,19 @@ services:
     volumes:
       - mongodata:/data/db
 
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./backend/src:/app/src
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/launchpad
+      - PORT=3001
+    depends_on:
+      - mongo
+
 volumes:
   mongodata:

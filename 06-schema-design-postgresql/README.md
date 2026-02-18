@@ -27,12 +27,12 @@ How to design robust relational database schemas with PostgreSQL -- from tables 
 | 09 | [complex-queries](./lessons/09-complex-queries/) | Write joins, subqueries, and CTEs |
 | 10 | [full-text-search](./lessons/10-full-text-search/) | Implement full-text search with PostgreSQL |
 
-## Quick Start
+### Quick Start
 
 ```bash
-docker compose up -d   # Start PostgreSQL
-make setup             # Install deps and create .env
-make dev               # Start the dev server
+make docker-up   # Start PostgreSQL + API
+make setup       # Install dependencies (if running without Docker)
+make dev         # Start API at http://localhost:3001
 ```
 
 ## Commands

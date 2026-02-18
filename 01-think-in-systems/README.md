@@ -25,7 +25,11 @@ API contracts, component trees, and a technical spec -- before writing any code.
 | 07 | [architecture-decisions](./lessons/07-architecture-decisions/) | Make and document architecture decisions |
 | 08 | [technical-spec](./lessons/08-technical-spec/) | Pull everything together into a technical spec |
 
-## Quick Start
+### Quick Start
+
+```bash
+make help   # See all available commands
+```
 
 This course is markdown-only. Open the lesson READMEs in order to get started.
 

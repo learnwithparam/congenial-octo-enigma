@@ -1,4 +1,4 @@
-.PHONY: help setup install dev test clean
+.PHONY: help setup install dev test clean docker-up docker-down
 .DEFAULT_GOAL := help
 
 # Colors
@@ -14,25 +14,29 @@ help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  $(YELLOW)%-15s$(NC) %s\n", $$1, $$2}'
 
 setup: ## Initial setup (create .env, install deps)
-	@if [ ! -f .env ]; then \
+	@cd backend && if [ ! -f .env ]; then \
 		echo "$(BLUE)Creating .env file...$(NC)"; \
 		cp .env.example .env; \
-		echo "$(GREEN)Done. Edit .env with your values.$(NC)"; \
-	else \
-		echo "$(YELLOW).env already exists$(NC)"; \
 	fi
-	@npm install
+	@cd backend && npm install
 	@echo "$(GREEN)Setup complete$(NC)"
 
 install: ## Install dependencies
-	@npm install
+	@cd backend && npm install
 
 dev: ## Start development server
-	@npm run dev
+	@cd backend && npm run dev
 
 test: ## Run tests
-	@npm test
+	@cd backend && npm test
 
 clean: ## Remove node_modules and dist
-	@rm -rf node_modules dist
+	@rm -rf backend/node_modules backend/dist
 	@echo "$(GREEN)Cleaned$(NC)"
+
+docker-up: ## Start PostgreSQL and API with Docker
+	@docker compose up -d
+	@echo "$(GREEN)PostgreSQL running on port 5432, API on port 3001$(NC)"
+
+docker-down: ## Stop Docker containers
+	@docker compose down

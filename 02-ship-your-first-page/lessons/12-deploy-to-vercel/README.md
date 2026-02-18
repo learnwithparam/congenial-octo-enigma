@@ -298,13 +298,13 @@ You have built the frontend. The mock data served its purpose: it let you focus 
 
 In future courses, you will:
 
-Course 03 - React Deep Dive: Master React patterns including context, custom hooks, performance optimization with memo and useMemo, and advanced component composition.
+Course 03 - REST APIs That Don't Suck: Build a production Express API with proper routing, middleware, validation, error handling, and authentication.
 
-Course 04 - Data Fetching Patterns: Learn server actions, streaming, caching strategies, and optimistic updates in Next.js 15.
+Course 04 - GraphQL from Scratch: Learn GraphQL server and client development with Apollo, including schemas, resolvers, queries, mutations, and subscriptions.
 
-Course 05 - Full Stack with Database: Replace the mock data with a real PostgreSQL database. Add user authentication, real upvoting, and persistent data storage.
+Course 05 - Connect the Dots: Wire your Next.js frontend to real APIs. Handle loading states, error boundaries, optimistic updates, and end-to-end data flow.
 
-Course 06 - Testing and Quality: Write unit tests, integration tests, and end-to-end tests for your LaunchPad app.
+Course 06 - Schema Design with PostgreSQL: Design relational schemas, write migrations, model relationships, and query data with SQL and Drizzle ORM.
 
 Each course builds on what you have here. The LaunchPad app you just deployed is the foundation.
 

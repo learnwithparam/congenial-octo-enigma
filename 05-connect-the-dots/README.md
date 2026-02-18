@@ -4,12 +4,11 @@ Wire Your Frontend to a Real API.
 
 ## What You'll Learn
 
-How to connect a Next.js frontend to a real backend API -- replacing mock data with actual HTTP calls, handling authentication, managing errors gracefully, and implementing optimistic updates for a snappy user experience.
+How to connect a Next.js frontend to a real backend API -- replacing mock data with actual HTTP calls, handling authentication, managing errors gracefully, and implementing optimistic updates for a snappy user experience. This course includes its own backend API so you can work with both sides of the stack.
 
 ## Prerequisites
 
-- Completed Course 03 (REST APIs) or equivalent API knowledge
-- Comfortable with React and Next.js basics
+- Familiar with REST APIs and React/Next.js basics
 - Node.js 20+ installed
 
 ## Lessons
@@ -25,11 +24,15 @@ How to connect a Next.js frontend to a real backend API -- replacing mock data w
 | 07 | [optimistic-updates](./lessons/07-optimistic-updates/) | Update the UI before the server responds |
 | 08 | [environment-config](./lessons/08-environment-config/) | Manage env variables across environments |
 
-## Quick Start
+### Quick Start
 
 ```bash
-make setup    # Install deps and create .env
-make dev      # Start the Next.js dev server
+make setup         # Install all dependencies
+make dev-backend   # Start backend API at http://localhost:3001
+make dev-frontend  # Start Next.js frontend at http://localhost:3000
+
+# Or with Docker:
+make docker-up     # Start both services
 ```
 
 ## Commands

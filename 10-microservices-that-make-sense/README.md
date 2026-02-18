@@ -8,9 +8,18 @@ How to identify service boundaries, extract services from a monolith, set up an 
 
 ## Prerequisites
 
-- Completed the Background Jobs course (or equivalent experience)
-- Familiar with Express and REST APIs
+- Familiar with Express, REST APIs, and async/await patterns
 - Docker and Docker Compose installed
+
+### Quick Start
+
+```bash
+make docker-up       # Start Redis + all services
+make setup           # Install dependencies (if running without Docker)
+make dev-gateway     # Start gateway at http://localhost:3000
+make dev-auth        # Start auth service at http://localhost:3001
+make dev-notifications  # Start notification service at http://localhost:3002
+```
 
 ## Lessons
 
@@ -26,14 +35,6 @@ How to identify service boundaries, extract services from a monolith, set up an 
 | 08 | [health-checks](./lessons/08-health-checks/) | Implementing health check endpoints |
 | 09 | [distributed-logging](./lessons/09-distributed-logging/) | Centralized logging across services |
 | 10 | [local-development](./lessons/10-local-development/) | Running all services locally |
-
-## Quick Start
-
-```bash
-make setup
-docker compose up -d
-make dev
-```
 
 ## Commands
 

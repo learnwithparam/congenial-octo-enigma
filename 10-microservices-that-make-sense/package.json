@@ -4,9 +4,9 @@
   "description": "Split Your Monolith When (and Only When) It Matters",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/gateway.ts",
-    "dev:auth": "tsx watch src/services/auth.ts",
-    "dev:notifications": "tsx watch src/services/notifications.ts",
+    "dev": "tsx watch gateway/src/index.ts",
+    "dev:auth": "tsx watch auth-service/src/index.ts",
+    "dev:notifications": "tsx watch notification-service/src/index.ts",
     "build": "tsc",
     "test": "vitest"
   },

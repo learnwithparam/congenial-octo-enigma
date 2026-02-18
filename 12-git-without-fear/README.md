@@ -12,6 +12,12 @@ How to build a solid mental model of Git, use branching strategies effectively, 
 - A GitHub account
 - Basic command line familiarity
 
+### Quick Start
+
+```bash
+make setup    # Install dependencies
+```
+
 ## Lessons
 
 | # | Lesson | Topic |
@@ -24,12 +30,6 @@ How to build a solid mental model of Git, use branching strategies effectively, 
 | 06 | [conventional-commits](./lessons/06-conventional-commits/) | Commit messages that tell a story |
 | 07 | [undo-recover](./lessons/07-undo-recover/) | Undoing mistakes and recovering lost work |
 | 08 | [github-actions-ci](./lessons/08-github-actions-ci/) | Setting up CI with GitHub Actions |
-
-## Quick Start
-
-```bash
-make setup
-```
 
 ## Commands
 
