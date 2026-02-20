@@ -90,11 +90,9 @@ NN-course-slug/
 ├── docker-compose.yml     # When external services needed
 ├── lessons/
 │   ├── 01-topic-name/
-│   │   ├── README.md      # Lesson instructions
-│   │   ├── start/         # Starter code
-│   │   └── finish/        # Reference solution
+│   │   └── README.md      # Lesson instructions
 │   └── ...
-├── src/                   # Cumulative project code
+├── frontend/              # Cumulative project code (might also be backend/, app/, or src/)
 └── tests/                 # Test files
 ```
 
@@ -114,9 +112,9 @@ make dev
 ## How Each Course Works
 
 1. **Read the course README** for overview and prerequisites
-2. **Follow lessons in order** — each builds on the previous one
-3. **Start with the `start/` folder** in each lesson for starter code
-4. **Check the `finish/` folder** if you get stuck — it has the reference solution
+2. **Follow lessons in order** — each builds cumulatively on the previous one
+3. **Read the lesson `README.md`** for instructions and explanations
+4. **Write code in the main course directory** (like `frontend/` or `backend/`) following the lesson steps
 5. **Run `make help`** in any course to see available commands
 
 ## Contributing
